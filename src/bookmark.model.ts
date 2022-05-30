@@ -1,0 +1,33 @@
+export interface BookmarkModel {
+    account_type?: string;
+    description?: string;
+    duration?: number;
+    is_plus?: string;
+    thumbnail_url_with_play_button?: string;
+    upload_date?: Date;
+    uri?: string;
+    video_id?: number;
+    added_date: Date;
+    author_name: string;
+    author_url: string;
+    cache_age: number;
+    flickr_type: string;
+    height: number;
+    html: string;
+    license: string;
+    license_id: string;
+    license_url: string;
+    media_url: string;
+    provider_name: string;
+    provider_url: string;
+    thumbnail_height: number;
+    thumbnail_url: string;
+    thumbnail_width: number;
+    title: string;
+    type: string;
+    url: string;
+    version: string;
+    web_page: string;
+    web_page_short_url: string;
+    width: number;
+}

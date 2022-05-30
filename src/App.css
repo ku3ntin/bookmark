@@ -2,37 +2,146 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #DFC2F2;
+    background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
+    background-attachment: fixed;	
+    background-size: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-shadow: 5px 7px 12px 7px #ece8e8;
+    margin: 10px;
+    width: 500px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  label {
+    font-family: 'Bebas Neue', cursive;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    color: #344055;
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  #container{
+    box-shadow: 0 15px 30px 1px grey;
+    background: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5em auto;
+    height: 350px;
+    width: 875px;
+    
+    
   }
-}
+  .bookmark-details {
+    position: relative;
+    text-align: left;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    padding: 30px;
+    height: 100%;
+    float: left;
+    width: 40%;
+  
+  }
+  
+  #container .bookmark-details h1{
+    font-family: 'Bebas Neue', cursive;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    color: #344055;
+    margin: 0;
+    
+  }
+  
+  #container .bookmark-details h1:before{
+    position: absolute;
+    content: '';
+    right: 0%; 
+    top: 0%;
+    transform: translate(25px, -15px);
+    font-family: 'Bree Serif', serif;
+    display: inline-block;
+    background: #ffe6e6;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    color: white;
+    margin: 0;
+    animation: chan-sh 6s ease infinite;
+  
+  }
+  
+  #container .bookmark-details > p {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    font-size: 18px;
+    color: #7d7d7d;
+    
+  }
+  .control{
+    position: absolute;
+    bottom: 20%;
+    left: 22.8%;
+    
+  }
+  .btn {
+    transform: translateY(0px);
+    transition: 0.3s linear;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #eee;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .btn span {
+    font-family: 'Farsan', cursive;
+    transition: transform 0.3s;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin:0;
+    
+  }
+  
+  .btn .delete { z-index: 3;  font-weight: bolder;  background:  #ff8080; }
+
+  .btn .submit {z-index: 3; font-weight: bolder; background:  #80a9ff;}
+  
+  .btn .delete:hover {
+    transform: translateX(10px);
+    background:  #f54747;
+  }
+
+  .btn .submit:hover {
+    transform: translateX(10px);
+    background:  #5f7dbd;
+  }
+
+  .bookmark-image {
+    transition: all 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    float: right;
+    width: 50%;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+  }
+  
+  #container img {width: 100%;height: 100%;}
+  
+  .bookmark-image:hover img {transition: all 0.3s ease-out;}
+  .bookmark-image:hover img {transform: scale(1.2, 1.2);}
